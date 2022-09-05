@@ -1,0 +1,122 @@
+.weather{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    background-color: rgb(206, 200, 200);
+    border: 1px solid rgb(161, 154, 154);
+    border-radius: 12px 12px;
+    box-shadow: 2px 2px 10px;
+    margin: auto;
+    margin-top: 8%;
+   
+}
+
+.weather h1{
+    text-align: center;
+}
+.weather p{
+    text-align: center;
+}
+
+.weather-main{
+    width: 400px;
+    height: 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weather-left{
+    width: 200px;
+    height: 170px;
+}
+
+.weather-left img{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    bottom: 70px;
+    right: 12px;
+}
+.weather-left h1{
+    font-size: 25px;
+    position: relative;
+    bottom: 150px
+}
+.weather-right{
+    width: 200px;
+    height: 170px;
+}
+.weather-right li{
+    list-style: none;
+    padding: 5px;
+}
+.weather-right p{
+    text-align: left;
+    margin-left: 12px;
+    padding: 2px;
+}
+
+.weather button{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 12px;
+    border: 1px solid gray;
+    border-radius: 12px 12px;
+    box-shadow: 2px 2px 10px;
+    cursor: pointer;
+}
+
+.background{
+    width: 400px;
+    height: 400px;
+    background-image: url('./IMG/descarga.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: 12px 12px;
+}
+
+.background p{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    z-index: 1;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.loader{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader i{
+    font-size: 300px;
+    -webkit-animation: spin 2s linear infinite ;
+    animation: spin 2s linear infinite;
+    color: rgb(98, 94, 139);
+    display: inline-block;
+    justify-self: center;
+}
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+
+

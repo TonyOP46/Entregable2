@@ -32,6 +32,8 @@ const Weather = () => {
 
     const Fahrenheit = (Math.floor(weather.main?.temp-273.15)*1.8)+32 
 
+    const fahrenheit = Fahrenheit.toFixed(1)
+
     const centigrad = Math.floor(Math.floor(weather.main?.temp -272.15))
    
 
@@ -54,7 +56,7 @@ const Weather = () => {
                 <div className='weather-main'>
                     <div className='weather-left'>
                         <img src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
-                        <h1>{centigrades ? Fahrenheit: centigrad } {centigrades ? "°F": "°C"}</h1>
+                        <h1>{centigrades ? fahrenheit: centigrad } {centigrades ? "°F": "°C"}</h1>
                     </div>
                 <div className='weather-right'>
                     <ol>
